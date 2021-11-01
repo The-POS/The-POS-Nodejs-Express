@@ -1,0 +1,31 @@
+{
+  "name": "the-pos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-POS/The-POS-Nodejs-Express.git"
+  },
+  "keywords": [
+    "the-pos"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/The-POS/The-POS-Nodejs-Express/issues"
+  },
+  "homepage": "https://github.com/The-POS/The-POS-Nodejs-Express#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "multer": "^1.4.3"
+  }
+}
