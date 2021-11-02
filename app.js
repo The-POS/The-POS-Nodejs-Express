@@ -1,11 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const multParse = require('./middlewares/multer');
+const middlewares = require('./middlewares/index');
 
 const app = express();
 
 app.use(bodyParser.json()); // application/json
 app.use(bodyParser.urlencoded({ extended: true })); // x-www-form-urlencoded
+app.use(middlewares.multer);
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); // disable CROS for all websites
@@ -14,6 +15,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// called when any endpoint throw error
 app.use((error, req, res, next) => {
   console.log(error);
   const statusCode = error.statusCode || 500;
@@ -25,3 +27,4 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(8080);
+module.exports = app; // for testing
