@@ -6,7 +6,7 @@ const limiter = rateLimit({
   max: 20, // limit each IP to 100 requests per windowMs
   message: {
     status: 'error',
-    message: 'Too many requests, please try again later after 2 minutes.'
-  }
+    message: 'Too many requests, please try again later after 2 minutes.',
+  },
 });
 module.exports = limiter;
