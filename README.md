@@ -1,3 +1,7 @@
+## Contributors
+
+[![GitHub Contributors](https://img.shields.io/github/contributors/The-POS/The-POS-Nodejs-Express)](https://github.com/The-POS/The-POS-Nodejs-Express)
+
 ## About ThePOS
 
 An open-source initiative that belongs to [Gaza Tech Community](https://www.facebook.com/groups/142204986283498) to encourage the Gazans developer to share their knowledge with each other and contribute to the open-source world.
