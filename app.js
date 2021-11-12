@@ -1,12 +1,15 @@
 const express = require('express');
- 
+require('dotenv').config();
+
 const middlewares = require('./middlewares/index');
 const multParse = require('./middlewares/multer');
+const sequelize = require('./config/database');
+const models = require('./models/index');
 
 const app = express();
 
 middlewares(app);
- 
+
 // called when any endpoint throw error
 app.use((error, req, res, next) => {
   console.log(error);
@@ -18,5 +21,12 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.listen(8080);
-module.exports = app; // for testing
+sequelize
+  // .sync({ force: true })
+  .sync()
+  .then(result => {
+    app.listen(8080);
+  })
+  .catch(err => {
+    console.log(err);
+  });
