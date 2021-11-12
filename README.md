@@ -1,9 +1,6 @@
-
-
-
 ## Contributors
-[![GitHub Contributors](https://img.shields.io/github/contributors/The-POS/The-POS-Nodejs-Express)](https://github.com/The-POS/The-POS-Nodejs-Express)
 
+[![GitHub Contributors](https://img.shields.io/github/contributors/The-POS/The-POS-Nodejs-Express)](https://github.com/The-POS/The-POS-Nodejs-Express)
 
 ## About ThePOS
 
